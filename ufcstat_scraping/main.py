@@ -14,4 +14,3 @@ print(response)
 events = get_events(response)
 
 print(events)
-
