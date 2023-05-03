@@ -11,7 +11,7 @@ response = requests.get(base_url, headers=headers)
 print(response)
 
 
-fights = get_fights_records(response, headers, 'all')
+fights = get_fights_records(response, headers)
 ufc_fights_records = pd.DataFrame(fights)
 ufc_fights_records.to_csv('ufc_fights_records.csv', index=False)
 print(ufc_fights_records.head())
